@@ -30,7 +30,7 @@ export default class NavBar extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="sticky-top">
                 <Navbar color="light" light expand="md">
                     <Aux>
                         <NavbarBrand>

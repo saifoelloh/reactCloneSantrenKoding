@@ -20,11 +20,17 @@ const Example = (props) => {
                 <CardImg src={props.card.img} />
                 <CardBody>
                     <CardTitle>{props.card.judul}</CardTitle>
-                    <CardSubtitle>{props.card.subJudul}</CardSubtitle>
+                    <CardText>{props.card.subJudul}</CardText>
                 </CardBody>
                 <CardBody>
-                    <CardLink href="#">by Santren Koding</CardLink>
-                    <CardLink href="#">Kuota Terbatas</CardLink>
+                    <Row>
+                        <Col>
+                            <CardLink className="text-secondary" href="#"><small>by Santren Koding</small></CardLink>
+                        </Col>
+                        <Col className="ml-auto text-right text-danger">
+                            <small>Kuota Terbatas</small>
+                        </Col>
+                    </Row>
                 </CardBody>
             </Card>
         </div>
